@@ -49,5 +49,23 @@
         </ul>
         <h2 id="contributing">Contributing</h2>
         <p>Contributions are always welcome! Read the <a href="contributing.md">contribution guidelines</a> first.</p>
+
+        <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+
+            const firebaseConfig = {
+              apiKey: "AIzaSyBYPO6c4x5e0S9VXB3bmjx0KPv0ZmE8POI",
+              authDomain: "awesome-gpt4.firebaseapp.com",
+              projectId: "awesome-gpt4",
+              storageBucket: "awesome-gpt4.appspot.com",
+              messagingSenderId: "330521784467",
+              appId: "1:330521784467:web:3d454fe77dca57e7c25d66",
+              measurementId: "G-ET0JMTXN32"
+            };
+
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+        </script>
     </body>
 </html>
